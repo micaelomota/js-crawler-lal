@@ -32,9 +32,9 @@ app.use(async (req, res) => {
            lancesMartinez.push(lance);
         }
     }
-
+    console.log(lancesMartinez.length); 
     browser.close();
-    res.send( lancesMartinez);
+    res.send(lancesMartinez);
 });
 
 const server = app.listen(process.env.PORT || 8080, err => {
